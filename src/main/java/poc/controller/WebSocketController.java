@@ -26,7 +26,6 @@ public class WebSocketController {
 			System.out.println("message="+message);
 			this.template.convertAndSend("/chat", new SimpleDateFormat("HH:mm:ss").format(new Date()) + " " + message);
 		}
-
 	}
 
 }
